@@ -1,4 +1,4 @@
-"""Package the revised report and trained models with their provenance."""
+"""Package the report, experiment code, and recorded results."""
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
@@ -31,15 +31,21 @@ def main():
                       "results/nautilus-v1/plain_test"):
         for name in ("metrics.json", "audit.json", "generated_grid.png", "real_grid.png"):
             files.append(f"{directory}/{name}")
+    # Support both the development workspace and a fresh repository checkout.
+    pdf = PDF if PDF.is_file() else ROOT / "report.pdf"
+    readme = ROOT / "nautilus/FINAL_README.md"
+    if not readme.is_file():
+        readme = ROOT / "README.md"
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(OUTPUT, "w", ZIP_DEFLATED, compresslevel=5) as archive:
-        archive.write(PDF, "report.pdf")
-        archive.write(ROOT / "nautilus/FINAL_README.md", "README.md")
+        archive.write(pdf, "report.pdf")
+        archive.write(readme, "README.md")
         for path in files:
             archive.write(ROOT / path, path)
     # Check archive integrity and ensure its PDF is the current final report.
     with ZipFile(OUTPUT) as archive:
         assert archive.testzip() is None
-        assert archive.read("report.pdf") == PDF.read_bytes()
+        assert archive.read("report.pdf") == pdf.read_bytes()
     print(OUTPUT)
 
 
