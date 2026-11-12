@@ -45,7 +45,7 @@ Both new models train from scratch on one A100 80\,GB (PyTorch 2.4.1, CUDA 12.1)
 
 \newpage
 \section{Evaluation and results}
-For each evaluation, we generate \EvaluationCount{} images with noise seed \LatentSeed{} and sample \EvaluationCount{} real images without replacement (seed \RealSeed). Both use 8-bit RGB. Ignite computes the scores~\cite{ignite}. FID-2048 uses \texttt{pytorch-fid} pool3 features~\cite{fid}; FID-1000 uses ImageNet probabilities. Inception inputs are resized bilinearly to $299\times299$. IS is one aggregate, with no split-based deviation. All final checkpoints are compared on validation; the wider DCGAN is selected by lowest validation FID and then evaluated on test.
+For each evaluation, we generate \EvaluationCount{} images with noise seed \LatentSeed{} and sample \EvaluationCount{} real images without replacement (seed \RealSeed). Both use 8-bit RGB. Ignite computes the scores~\cite{ignite}. FID-2048 uses \texttt{pytorch-fid} pool3 features~\cite{fid}; FID-1000 uses ImageNet probabilities. Inception inputs are resized bilinearly to $299\times299$. IS is one aggregate, with no split-based deviation. Reusing generated samples across splits explains matching IS values: IS depends only on generated images. All final checkpoints are compared on validation; the wider DCGAN is selected by lowest validation FID and then evaluated on test.
 
 \begin{table}[h]
 \centering
@@ -79,7 +79,7 @@ The selected model lowers test FID by \TestReduction{}\% relative to the origina
 \end{figure}
 
 \section{Discussion}
-The wider DCGAN shows more coherent landscape layers and some recognizable figure outlines, but textures and small objects remain distorted. The resize/SN variant has higher validation IS yet worse FID than the wider DCGAN. Width and training duration change together relative to the original, so the gain cannot be attributed to either alone. One training seed, low resolution, and ImageNet features limit conclusions about variability and artistic fidelity.
+The wider DCGAN shows more coherent landscape layers and some recognizable figure outlines, but textures and small objects remain distorted. The resize/SN variant has higher validation IS yet worse FID than the wider DCGAN. Late generator losses fluctuate around a plateau while discriminator loss remains low; these curves do not establish convergence. Width and training duration change together relative to the original, so the gain cannot be attributed to either alone. One training seed, low resolution, and ImageNet features limit conclusions about variability and artistic fidelity.
 
 {\small
 \begin{thebibliography}{4}
