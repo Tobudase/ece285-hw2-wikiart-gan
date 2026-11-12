@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "independently_recomputed": {
+    "fid_2048": 111.83724598934714,
+    "fid_1000": 0.10618827979000124,
+    "is_generated": 3.2126073799051897,
+    "is_real": 7.513761709440277
+  },
+  "checkpoint_hash_matches": true,
+  "sample_count_matches": true,
+  "real_indices_unique": true,
+  "separate_evaluation_latent_seed": true
+}

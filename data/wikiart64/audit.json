@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "images_verified": 80697,
+  "split_counts": {
+    "train": 64615,
+    "validation": 7965,
+    "test": 8117
+  },
+  "exact_duplicates_across_splits": 0,
+  "limitation": "Pixel hash does not detect approximate duplicates or shared artists"
+}

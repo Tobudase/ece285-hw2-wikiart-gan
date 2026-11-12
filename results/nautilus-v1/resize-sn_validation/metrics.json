@@ -1,0 +1,22 @@
+{
+  "fid_2048": 75.77362312799715,
+  "fid_1000": 0.08856010830496294,
+  "is_generated": 4.713033120947244,
+  "is_real": 7.609017178826747,
+  "samples": 5000,
+  "split": "validation",
+  "seed": 286,
+  "latent_seed": 1286,
+  "training_noise_seed": 286,
+  "epoch": 40,
+  "checkpoint_sha256": "45769cf54b6eb39d27a31207ac9294a0996c0a40c85a43dc88f7cf3f055ad583",
+  "manifest_sha256": "db5a86cdc33851722875da96ae55d286f6c08f87554b1a74a362ab100ca7ce56",
+  "device": "cuda",
+  "elapsed_seconds": 154.98127580899745,
+  "fid_2048_extractor": "pytorch-fid 0.3.0 TensorFlow-compatible Inception weights, pool3",
+  "fid_1000_extractor": "Ignite torchvision ImageNet Inception-v3 class probabilities",
+  "is_definition": "Ignite global IS (one aggregate; no split standard deviation)",
+  "input_processing": "64x64 RGB; generated images quantized to uint8; Inception bilinear resize 299x299",
+  "probability_normalization": "torchvision ImageNet mean/std before its internal transform_input",
+  "sample_selection": "First 16 seeded generated/real samples shown; no visual selection"
+}

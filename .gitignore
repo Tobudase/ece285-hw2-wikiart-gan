@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.mplconfig/
+data/wikiart64/images.npy
+data/torch/
+*.zip
+**/last.pt
+**/features.npz

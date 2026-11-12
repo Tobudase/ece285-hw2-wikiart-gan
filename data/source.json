@@ -1,0 +1,10 @@
+{
+  "id": 2477766,
+  "ref": "steubk/wikiart",
+  "title": "WikiArt",
+  "totalBytes": 33774422962,
+  "lastUpdated": "2022-09-14T08:59:24.177Z",
+  "currentVersionNumber": 1,
+  "description": "Dataset used for training  https://archive.org/details/wikiart-stylegan2-conditional-model by Peter Baylies \n\nUpscaled and resized, originally from https://github.com/cs-chan/ArtGAN/tree/master/WikiArt%20Dataset\n\nNote:\n1. The WikiArt dataset can be used only for non-commercial research purpose.\n2. The images in the WikiArt dataset were obtained from WikiArt.org. The authors are neither responsible for the content nor the meaning of these images.\n3. By using the WikiArt dataset, you agree to obey the terms and conditions of WikiArt.org.\n\n\nDataset contains 80020 unique images  from 1119 different artists in 27 styles",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/steubk/wikiart?datasetVersionNumber=1"
+}

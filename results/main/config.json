@@ -1,0 +1,25 @@
+{
+  "data": "data/wikiart64",
+  "output": "results/main",
+  "epochs": 20,
+  "batch_size": 128,
+  "width": 32,
+  "latent_dim": 100,
+  "lr": 0.0002,
+  "seed": 285,
+  "device": "mps",
+  "threads": 4,
+  "device_used": "mps",
+  "torch_version": "2.4.0",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "train_count": 64615,
+  "manifest_sha256": "db5a86cdc33851722875da96ae55d286f6c08f87554b1a74a362ab100ca7ce56",
+  "optimizer_betas": [
+    0.5,
+    0.999
+  ],
+  "generator_parameters": 1100224,
+  "discriminator_parameters": 694656,
+  "checkpoint_policy": "Final epoch of a predeclared budget; no test-based selection",
+  "dropped_per_epoch": 103
+}

@@ -1,0 +1,14 @@
+{
+  "epochs": 20,
+  "elapsed_seconds": 770.9129214580171,
+  "checkpoint": "results/main/last.pt",
+  "final": {
+    "epoch": 20,
+    "discriminator_loss": 0.4757447838783264,
+    "generator_loss": 3.2439119815826416,
+    "d_real_probability": 0.8326327204704285,
+    "d_fake_probability": 0.16739846765995026,
+    "examples": 64512,
+    "seconds": 38.49167741695419
+  }
+}

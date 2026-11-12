@@ -1,0 +1,26 @@
+{
+  "data": "/tmp/hw2/data/wikiart64",
+  "output": "/work/results/nautilus-v1/plain",
+  "epochs": 40,
+  "batch_size": 128,
+  "width": 64,
+  "latent_dim": 100,
+  "lr": 0.0002,
+  "seed": 285,
+  "device": "cuda",
+  "threads": 4,
+  "variant": "plain",
+  "device_used": "cuda",
+  "torch_version": "2.4.1+cu121",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+  "train_count": 64615,
+  "manifest_sha256": "db5a86cdc33851722875da96ae55d286f6c08f87554b1a74a362ab100ca7ce56",
+  "optimizer_betas": [
+    0.5,
+    0.999
+  ],
+  "generator_parameters": 3576704,
+  "discriminator_parameters": 2765568,
+  "checkpoint_policy": "Final epoch of a predeclared budget; no test-based selection",
+  "dropped_per_epoch": 103
+}

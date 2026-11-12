@@ -1,0 +1,14 @@
+{
+  "epochs": 40,
+  "elapsed_seconds": 645.5973644859623,
+  "checkpoint": "/work/results/nautilus-v1/resize-sn/last.pt",
+  "final": {
+    "epoch": 40,
+    "discriminator_loss": 0.18770664930343628,
+    "generator_loss": 2.214707136154175,
+    "d_real_probability": 0.8427889943122864,
+    "d_fake_probability": 0.1620708554983139,
+    "examples": 64512,
+    "seconds": 15.554466881090775
+  }
+}

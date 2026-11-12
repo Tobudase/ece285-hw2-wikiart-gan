@@ -1,0 +1,154 @@
+{
+  "source": "steubk/wikiart",
+  "archive": "/Users/tobudase/Documents/ChatGPT/ECE285/hw2/data/wikiart-v1.zip",
+  "image_size": 64,
+  "seed": 285,
+  "preprocessing": "EXIF transpose; RGB; centered square crop; bicubic resize",
+  "split_rule": "SHA-256(seed:pixel_sha256), thresholds 0.8 and 0.9",
+  "candidate_images": 81444,
+  "unique_images": 80697,
+  "counts": {
+    "train": 64615,
+    "validation": 7965,
+    "test": 8117
+  },
+  "skipped": 0,
+  "duplicates": 747,
+  "styles": {
+    "Abstract_Expressionism": {
+      "train": 2204,
+      "validation": 286,
+      "test": 291
+    },
+    "Action_painting": {
+      "train": 74,
+      "validation": 8,
+      "test": 11
+    },
+    "Analytical_Cubism": {
+      "train": 91,
+      "validation": 10,
+      "test": 9
+    },
+    "Art_Nouveau_Modern": {
+      "train": 3489,
+      "validation": 422,
+      "test": 422
+    },
+    "Baroque": {
+      "train": 3384,
+      "validation": 437,
+      "test": 417
+    },
+    "Color_Field_Painting": {
+      "train": 1239,
+      "validation": 135,
+      "test": 171
+    },
+    "Contemporary_Realism": {
+      "train": 386,
+      "validation": 47,
+      "test": 48
+    },
+    "Cubism": {
+      "train": 1797,
+      "validation": 240,
+      "test": 196
+    },
+    "Early_Renaissance": {
+      "train": 1101,
+      "validation": 139,
+      "test": 149
+    },
+    "Expressionism": {
+      "train": 5325,
+      "validation": 640,
+      "test": 695
+    },
+    "Fauvism": {
+      "train": 644,
+      "validation": 95,
+      "test": 75
+    },
+    "High_Renaissance": {
+      "train": 1075,
+      "validation": 124,
+      "test": 141
+    },
+    "Impressionism": {
+      "train": 10441,
+      "validation": 1291,
+      "test": 1315
+    },
+    "Mannerism_Late_Renaissance": {
+      "train": 1033,
+      "validation": 117,
+      "test": 128
+    },
+    "Minimalism": {
+      "train": 1046,
+      "validation": 109,
+      "test": 127
+    },
+    "Naive_Art_Primitivism": {
+      "train": 1933,
+      "validation": 212,
+      "test": 240
+    },
+    "New_Realism": {
+      "train": 256,
+      "validation": 25,
+      "test": 33
+    },
+    "Northern_Renaissance": {
+      "train": 2029,
+      "validation": 243,
+      "test": 278
+    },
+    "Pointillism": {
+      "train": 399,
+      "validation": 50,
+      "test": 58
+    },
+    "Pop_Art": {
+      "train": 1176,
+      "validation": 139,
+      "test": 149
+    },
+    "Post_Impressionism": {
+      "train": 5140,
+      "validation": 619,
+      "test": 640
+    },
+    "Realism": {
+      "train": 8560,
+      "validation": 1102,
+      "test": 1042
+    },
+    "Rococo": {
+      "train": 1692,
+      "validation": 213,
+      "test": 183
+    },
+    "Romanticism": {
+      "train": 5545,
+      "validation": 688,
+      "test": 723
+    },
+    "Symbolism": {
+      "train": 3466,
+      "validation": 438,
+      "test": 423
+    },
+    "Synthetic_Cubism": {
+      "train": 167,
+      "validation": 22,
+      "test": 27
+    },
+    "Ukiyo_e": {
+      "train": 923,
+      "validation": 114,
+      "test": 126
+    }
+  }
+}
